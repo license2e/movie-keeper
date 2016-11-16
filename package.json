@@ -54,6 +54,7 @@
     "flexbox-react": "^4.0.2",
     "immutability-helper": "^2.0.0",
     "muicss": "^0.9.4",
+    "react": "^15.4.0",
     "react-addons-css-transition-group": "^15.3.2",
     "react-dom": "^15.4.0",
     "react-rating": "^0.6.1"
