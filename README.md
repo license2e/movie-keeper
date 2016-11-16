@@ -7,3 +7,9 @@
 3. `cd path/to/movie-keeper`
 4. `npm i`
 5. `npm start`
+
+## Screenshots
+
+![Homepage](./screenshots/page.png)
+
+![Add Movie](./screenshots/add-movie.png)
