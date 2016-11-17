@@ -134,13 +134,27 @@ class App extends Component {
               <Input ref="title" label="Title" floatingLabel={true} onChange={this.addAttr.bind(this, 'title')} />
               <Input ref="director" label="Director" floatingLabel={true} onChange={this.addAttr.bind(this, 'director')} />
               <Input ref="year" label="Year of Release" floatingLabel={true} onChange={this.addAttr.bind(this, 'year')} />
-              <div className="mui-textfield">
+              <div className="mui-textfield" style={{marginBottom: 0}}>
+                <div style={{marginBottom: 15}}>Rating</div>
                 <Rating
                   initialRate={this.state.addMovie.rating || 0}
                   onClick={this.setRating.bind(this)}
                 />
               </div>
-              <Button variant="raised">Submit</Button>
+              <div style={{textAlign: 'right'}}>
+                <Button
+                  variant="flat"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    this.setState({
+                      showAddMovie: false,
+                    });
+                  }}
+                >
+                  Cancel
+                </Button>
+                <Button variant="flat" color="primary">Submit</Button>
+              </div>
             </Form>
           </Flexbox>
         </Flexbox>
